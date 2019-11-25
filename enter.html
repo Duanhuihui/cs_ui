@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>矿世煤炭薪资管理</title>
+<link rel="stylesheet" href="layui/css/layui.css" media="all">
+<script src="libs/jquery-3.4.1.min.js"></script>
+<script src="laydate/laydate.js"></script>
+<script src="layui/layui.js"></script>
+</head>
+<body class="layui-layout-body">
+
+    
+    <div class="layui-layout layui-layout-admin  " >
+        <div class="layui-header">
+            <div class="layui-logo">矿世煤炭开发公司</div>
+            <!-- 头部区域（可配合layui已有的水平导航） -->
+            
+            <ul class="layui-nav layui-layout-right">
+                <li id="baseInfo" class="layui-nav-item"><a  href="javascript:;"> 洪世贤</a>
+                    <dl class="layui-nav-child">
+                        <dd>
+                            <a  href="">基本资料</a>
+                        </dd>
+                        <dd>
+                            <a href="">权限设置</a>
+                        </dd>
+                    </dl></li>
+                <li class="layui-nav-item"><a href="">登出</a></li>
+            </ul>
+        </div>
+
+        <div class="layui-side layui-bg-black" style="padding-top: 20px;">
+            <div class="layui-side-scroll">
+                <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+                <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                    <li class="layui-nav-item " id="index">
+                        <a  href="javascript:;">
+                                <i class="layui-icon layui-icon-home" style="font-size: 15px; color: rgb(255, 255, 255); padding-right: 10px;"></i>
+                        总控制台</a>
+                    </li>
+                    <li id="dept" class="layui-nav-item "><a href="javascript:;">
+                            <i class="layui-icon layui-icon-tabs" style="font-size: 15px; color: rgb(255, 255, 255); padding-right: 10px;"></i>
+                        部门管理</a>
+                        <dl class="layui-nav-child">
+                            <dd>
+                                <a href="javascript:;">
+                                        <i class="layui-icon layui-icon-template" style="font-size: 15px; color: rgb(255, 255, 255); padding-right: 10px;"></i>
+                                    新建部门</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">
+                                        <i class="layui-icon layui-icon-util" style="font-size: 15px; color: rgb(255, 255, 255); padding-right: 10px;"></i>
+                                    修改部门</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">
+                                        <i class="layui-icon layui-icon-delete" style="font-size: 15px; color: rgb(255, 255, 255); padding-right: 10px;"></i>
+                                    删除部门</a>
+                            </dd>
+                        </dl></li>
+                    <li class="layui-nav-item"><a href="javascript:;">
+                            <i class="layui-icon layui-icon-user" style="font-size: 15px; color: rgb(255, 255, 255); padding-right: 10px;"></i>
+                        员工管理</a>
+                        <dl class="layui-nav-child ">
+                            <dd id="firstTest">
+                                <a class="test1" href="javascript:;">
+                                        <i class="layui-icon layui-icon-friends" style="font-size: 15px; color: rgb(255, 255, 255); padding-right: 10px;"></i>
+                                    新建员工</a>
+                            </dd>
+                            <dd>
+                                <a class="test2"  href="javascript:;">
+                                        <i class="layui-icon layui-icon-file" style="font-size: 15px; color: rgb(255, 255, 255); padding-right: 10px;"></i>
+                                    修改信息</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">
+                                        <i class="layui-icon layui-icon-delete" style="font-size: 15px; color: rgb(255, 255, 255); padding-right: 10px;"></i>
+                                    删除员工</a>
+                            </dd>
+                        </dl>
+                    </li> 
+                    <li class="layui-nav-item "><a href="javascript:;">
+                            <i class="layui-icon layui-icon-rmb" style="font-size: 15px; color: rgb(255, 255, 255); padding-right: 10px;"></i>
+                        薪资设置</a>
+                        <dl class="layui-nav-child">
+                            <dd>
+                                <a class="position" href="javascript:;">
+                                        <i class="layui-icon layui-icon-layouts" style="font-size: 15px; color: rgb(255, 255, 255); padding-right: 10px;"></i>
+                                    岗位工资</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">
+                                        <i class="layui-icon layui-icon-face-smile" style="font-size: 15px; color: rgb(255, 255, 255); padding-right: 10px;"></i>
+                                    奖励制度</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">
+                                        <i class="layui-icon layui-icon-component" style="font-size: 15px; color: rgb(255, 255, 255); padding-right: 10px;"></i>
+                                    税法信息</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">
+                                        <i class="layui-icon layui-icon-fire" style="font-size: 15px; color: rgb(255, 255, 255); padding-right: 10px;"></i>
+                                    小福利</a>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="layui-body">
+            <!-- 内容主体区域 -->
+            <div  style="padding: 30px;">
+
+                    <div class="layui-row layui-col-space10">
+                            <div class="layui-col-md9" >
+                              <div class="grid-demo grid-demo-bg1">
+                                <!-- 加载组件 -->
+                                  
+                                  <iframe style="border: none;width: 100%;height: 1000px;"></iframe>
+                              </div>
+                            </div>
+                            <div class="layui-col-md3" >
+                              <div class="grid-demo grid-demo-bg5" >
+                                    <div id="calendar"></div>
+                                    <!-- 选项卡 -->
+                                    <div class="layui-tab">
+                                        <ul class="layui-tab-title">
+                                          <li class="layui-this">员工信息</li>
+                                          <li>出勤统计</li>
+                                          <li>工作内容</li>
+                                        </ul>
+                                        <div class="layui-tab-content">
+                                          <div class="layui-tab-item layui-show">
+                                            员工信息加载中
+                                            
+                                          </div>
+                                          <div class="layui-tab-item"><br>别等了，这是假的</div>
+                                          <div class="layui-tab-item">哈哈哈哈</div>
+                                        </div>
+                                      </div>
+                                    <!-- 选项卡结束 -->
+                              </div>
+                            </div>
+                          </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="layui-footer">
+            <!-- 底部固定区域 -->
+            <div>
+                <footer></footer>
+            </div>
+        </div>
+
+    </div>
+    <script type="text/javascript">
+        //JavaScript代码区域
+        layui.use(['element','table','form','layer'], function() {
+            var element = layui.element;
+            var table = layui.table;
+            var form = layui.form;
+            var layer = layui.layer;
+           //直接嵌套显示
+            laydate.render({
+            elem: '#calendar'
+            ,position: 'static'
+            ,showBottom: false
+            ,theme: 'molv'
+            ,calendar: true
+            });
+        });
+
+        $(".layui-nav-child dd .test1").click(function () {
+            $("iframe").attr("src", "baseInfo.html");
+        });
+
+        $(".layui-nav-child dd .test2").click(function () {
+           $("iframe").attr("src", "updateEmpl.html");
+        });
+        $(".layui-nav-child dd .position").click(function () {
+           $("iframe").attr("src", "position.html");
+        });
+        
+        $("#index").click(function () {
+           $("iframe").attr("src", "index.html");
+        });
+        $("#dept").click(function () {
+           $("iframe").attr("src", "dept.html");
+        });
+    </script>
+</body>
+</html>

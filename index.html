@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>矿世煤炭薪资管理</title>
+<link rel="stylesheet" href="layui/css/layui.css">
+<script src="libs/jquery-3.4.1.min.js"></script>
+<script src="laydate/laydate.js"></script>
+<script src="layui/layui.js"></script>
+</head>
+<body>
+
+    
+   
+
+    
+           <!-- 常规布局（以中型屏幕桌面为例）： -->
+           <div class="layui-row layui-col-space5">
+
+            <div class="layui-col-sm6">
+              <div class="grid-demo grid-demo-bg2" style="background-color: chocolate;">
+            <!-- 轮播图区 -->
+            <div class="layui-carousel" id="test1" lay-filter="test1">
+                <div carousel-item="">
+                  <div><img src="layui/c.jpg" alt="工业" height="100%" width="100%"></div>
+                  <div><img src="layui/b.jpg" alt="工业" height="100%" width="100%"></div>
+                  <div><img src="layui/d.jpg" alt="工业" height="100%" width="100%"></div>
+                  <div><img src="layui/e.jpg" alt="工业" height="100%" width="100%"></div>
+                  <div><img src="layui/a.jpg" alt="工业" height="100%" width="100%"></div>
+                </div>
+              </div>
+            </div>
+            </div>
+
+            <div class="layui-col-sm6">
+              <div class="grid-demo grid-demo-bg2">
+              
+                  <div class="layui-tab">
+                      <ul class="layui-tab-title">
+                        <li class="layui-this">快捷方式</li>
+                      </ul>
+                      <div class="layui-tab-content">
+                        <div class="layui-tab-item layui-show">
+                         
+                            <div class="layui-row layui-col-space20">
+                                <div class="layui-col-xs3" >
+                                  <div class="grid-demo grid-demo-bg1">
+
+                                    <div  style="padding-left: 15%;background-color: #d2d2d2; border-radius: 3px; width: 65px; height: 65px;">
+                                        <i class="layui-icon layui-icon-username" style="font-size: 50px; color: white;"></i>
+                                    </div>
+                                    <div style="margin-left: 15%;">用户管理</div>
+
+                                  </div>
+                                </div>
+                                <div class="layui-col-xs3" >
+                                  <div class="grid-demo" >
+
+                                      <div style="padding-left: 15%;background-color: #d2d2d2; border-radius: 3px; width: 65px; height: 65px;">
+                                          <i class="layui-icon layui-icon-console" style="font-size: 50px; color: white;"></i>
+                                      </div>
+                                      <div style="margin-left: 18%;">控制台</div>
+
+                                  </div>
+                                </div>
+                                <div class="layui-col-xs3">
+                                  <div class="grid-demo grid-demo-bg1" >
+                                  
+                                      <div style="padding-left: 15%;background-color: #d2d2d2; border-radius: 3px; width: 65px; height: 65px;" >
+                                          <i class="layui-icon layui-icon-app" style="font-size: 50px; color: white;"></i>
+                                      </div>
+                                      <div style="margin-left: 20%;">应用</div>
+
+                                  </div>
+                                </div>
+                                <div class="layui-col-xs3">
+                                  <div class="grid-demo">
+                                  
+                                      <div style="padding-left: 15%;background-color: #d2d2d2; border-radius: 3px; width: 65px; height: 65px;">
+                                          <i class="layui-icon layui-icon-read" style="font-size: 50px; color: white;"></i>
+                                      </div>
+                                      <div style="margin-left: 15%;">在线办公</div>
+
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- 第二个 -->
+                              <div class="layui-row layui-col-space20">
+                                  <div class="layui-col-xs3" >
+                                    <div class="grid-demo grid-demo-bg1">
+  
+                                      <div  style="padding-left: 15%;background-color: #d2d2d2; border-radius: 3px; width: 65px; height: 65px;">
+                                          <i class="layui-icon layui-icon-senior" style="font-size: 50px; color: white;"></i>
+                                      </div>
+                                      <div style="margin-left: 18%;">供应链</div>
+  
+                                    </div>
+                                  </div>
+                                  <div class="layui-col-xs3" >
+                                    <div class="grid-demo" >
+  
+                                        <div style="padding-left: 15%;background-color: #d2d2d2; border-radius: 3px; width: 65px; height: 65px;">
+                                            <i class="layui-icon layui-icon-auz" style="font-size: 50px; color: white;"></i>
+                                        </div>
+                                        <div style="margin-left: 15%;">安全控制</div>
+  
+                                    </div>
+                                  </div>
+                                  <div class="layui-col-xs3">
+                                    <div class="grid-demo grid-demo-bg1" >
+                                    
+                                        <div style="padding-left: 15%;background-color: #d2d2d2; border-radius: 3px; width: 65px; height: 65px;" >
+                                            <i class="layui-icon layui-icon-util" style="font-size: 50px; color: white;"></i>
+                                        </div>
+                                        <div style="margin-left: 15%;">保修记录</div>
+  
+                                    </div>
+                                  </div>
+                                  <div class="layui-col-xs3">
+                                    <div class="grid-demo">
+                                    
+                                        <div style="padding-left: 15%;background-color: #d2d2d2; border-radius: 3px; width: 65px; height: 65px;">
+                                            <i class="layui-icon layui-icon-templeate-1" style="font-size: 50px; color: white;"></i>
+                                        </div>
+                                        <div style="margin-left: 15%;">重要事项</div>
+  
+                                    </div>
+                                  </div>
+                                </div>
+                              <!-- 第二个结束 -->
+
+                        </div>
+                      </div>
+                    </div>
+              
+              </div>
+            </div>
+
+          </div>
+          <!-- 常规布局（以中型屏幕桌面为例）： -->
+          <div class="layui-row layui-col-space5">
+            <div class="layui-col-xs6">
+              <div class="grid-demo grid-demo-bg1" >
+           
+                  <div class="layui-tab layui-tab-brief">
+                      <ul class="layui-tab-title">
+                        <li class="layui-this">发放工资</li>
+                        <li>工资统计</li>
+                        <li>煤炭产量</li>
+                        <li>年终奖累积</li>
+                      </ul>
+                      <div class="layui-tab-content">
+                        <div class="layui-tab-item layui-show">
+                          
+                            <table class="layui-table">
+                                <colgroup>
+                                  <col width="110">
+                                  <col width="70">
+                                  <col>
+                                </colgroup>
+                                <thead>
+                                  <tr>
+                                    <th>部门</th>
+                                    <th>人数</th>
+                                    <th>总额(单位:元)</th>
+                                    <th>操作</th>
+                                  </tr> 
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>综合管理部</td>
+                                    <td>620</td>
+                                    <td>5400000</td>
+                                    <td>
+                                      <button type="button" class="layui-btn layui-btn-danger layui-btn-xs"><i class="layui-icon layui-icon-rmb" style="font-size: 30px; color:white;"></i> 发放</button>
+                                      <button type="button" class="layui-btn  layui-btn-xs"><i class="layui-icon layui-icon-tabs" style="font-size: 30px; color:white;"></i>提醒</button>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>运营管理部</td>
+                                    <td>31</td>
+                                    <td>280000</td>
+                                    <td>
+                                        <button type="button" class="layui-btn layui-btn-danger layui-btn-xs"><i class="layui-icon layui-icon-rmb" style="font-size: 30px; color:white;"></i> 发放</button>
+                                        <button type="button" class="layui-btn  layui-btn-xs"><i class="layui-icon layui-icon-tabs" style="font-size: 30px; color:white;"></i>提醒</button>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>综合管理部</td>
+                                      <td>620</td>
+                                      <td>5400000</td>
+                                      <td>
+                                        <button type="button" class="layui-btn layui-btn-danger layui-btn-xs"><i class="layui-icon layui-icon-rmb" style="font-size: 30px; color:white;"></i> 发放</button>
+                                        <button type="button" class="layui-btn  layui-btn-xs"><i class="layui-icon layui-icon-tabs" style="font-size: 30px; color:white;"></i>提醒</button>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>运营管理部</td>
+                                      <td>31</td>
+                                      <td>280000</td>
+                                      <td>
+                                          <button type="button" class="layui-btn layui-btn-danger layui-btn-xs"><i class="layui-icon layui-icon-rmb" style="font-size: 30px; color:white;"></i> 发放</button>
+                                          <button type="button" class="layui-btn  layui-btn-xs"><i class="layui-icon layui-icon-tabs" style="font-size: 30px; color:white;"></i>提醒</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>综合管理部</td>
+                                        <td>620</td>
+                                        <td>5400000</td>
+                                        <td>
+                                          <button type="button" class="layui-btn layui-btn-danger layui-btn-xs"><i class="layui-icon layui-icon-rmb" style="font-size: 30px; color:white;"></i> 发放</button>
+                                          <button type="button" class="layui-btn  layui-btn-xs"><i class="layui-icon layui-icon-tabs" style="font-size: 30px; color:white;"></i>提醒</button>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>运营管理部</td>
+                                        <td>31</td>
+                                        <td>280000</td>
+                                        <td>
+                                            <button type="button" class="layui-btn layui-btn-danger layui-btn-xs"><i class="layui-icon layui-icon-rmb" style="font-size: 30px; color:white;"></i> 发放</button>
+                                            <button type="button" class="layui-btn  layui-btn-xs"><i class="layui-icon layui-icon-tabs" style="font-size: 30px; color:white;"></i>提醒</button>
+                                          </td>
+                                      </tr>
+                                </tbody>
+                              </table>
+
+                        </div>
+                        <div class="layui-tab-item">
+                          <img src="layui/h.jpg" alt="工资统计" style="width: 85%;">
+                        </div>
+                        <div class="layui-tab-item">
+                            <img src="layui/i.jpg" alt="煤炭产量" style="width: 85%;">
+                        </div>
+                        <div class="layui-tab-item">今年不过年了，别等了，年终奖不会发的，臭弟弟</div>
+                      </div>
+                    </div>
+                
+
+
+            </div>
+            </div>
+            <div class="layui-col-xs6">
+              <div class="grid-demo" style="background-color:rgb(95, 95, 233);">
+                <img src="layui/j.jpg" alt="世界地图" width="100%">
+            </div>
+            </div>
+          </div>
+<!-- 常规布局结束 -->
+			</div>
+        </div>
+
+        <div class="layui-footer">
+            <!-- 底部固定区域 -->
+            <div>
+                <footer></footer>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript"  >
+        //JavaScript代码区域
+        layui.use(['carousel','element','table','form','layer'], function() {
+            var carousel = layui.carousel;
+            var element = layui.element;
+            var table = layui.table;
+            var form = layui.form;
+            var layer = layui.layer;
+
+            //常规轮播
+            carousel.render({
+                elem: '#test1'
+                ,height:'250px'
+                ,width: '100%' //设置容器宽度
+                ,arrow: 'none'
+                ,interval:2000
+            });
+            // $(function(){
+            //     $("#baseInfo").click(function(){
+            //     //页面层-自定义
+            //         layer.open({
+            //             type: 2,
+            //             title: '绝世渣男洪世贤真的好骚呀',
+            //            // skin: 'layui-layer-rim',
+            //             shadeClose: false,
+            //             //overflow:true,
+            //             area: ['400px', '700px'],
+            //             content: 'baseInfo.html'
+            //         });
+
+            //     })
+            // });
+           
+        });
+    </script>
+</body>
+</html>

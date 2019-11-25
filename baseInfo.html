@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>矿世煤炭薪资管理</title>
+<link rel="stylesheet" href="layui/css/layui.css">
+<script src="libs/jquery-3.4.1.min.js"></script>
+<script src="laydate/laydate.js"></script>
+<script src="layui/layui.js"></script>
+</head>
+<body >
+
+
+<div  id="demo">
+
+<form class="layui-form" action="">
+    <div class="layui-form-item">
+      <label class="layui-form-label">员工姓名</label>
+      <div class="layui-input-block">
+        <input type="text" name="title" required  lay-verify="required" placeholder="请输入员工姓名" autocomplete="off" class="layui-input">
+      </div>
+    </div>
+
+    <div class="layui-form-item">
+      <label class="layui-form-label">性&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp别</label>
+      <div class="layui-input-block">
+        <input type="radio" name="sex" value="男" title="男" checked>
+        <input type="radio" name="sex" value="女" title="女" >
+      </div>
+    </div>
+
+    <div class="layui-form-item">
+      <label class="layui-form-label">联系方式</label>
+      <div class="layui-input-inline">
+        <input type="text" name="title" required lay-verify="required" placeholder="请输入电话" autocomplete="off" class="layui-input">
+      </div>
+    </div>
+
+    <div class="layui-form-item">
+      <label class="layui-form-label">身份证号</label>
+      <div class="layui-input-inline">
+        <input type="text" name="title" required lay-verify="required" placeholder="请输入身份证号" autocomplete="off" class="layui-input">
+      </div>
+    </div>
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">银行卡号</label>
+        <div class="layui-input-inline">
+          <input type="text" name="title" required lay-verify="required" placeholder="请输入银行卡号" autocomplete="off" class="layui-input">
+        </div>
+      </div>
+  
+
+    <div class="layui-form-item">
+      <label class="layui-form-label">家庭住址</label>
+      <div class="layui-input-inline">
+        <input type="text" name="title" required lay-verify="required" placeholder="请输入家庭住址" autocomplete="off" class="layui-input">
+      </div>
+    </div>
+
+    <div class="layui-form-item">
+      <label class="layui-form-label">所属部门</label>
+      <div class="layui-input-block">
+        <select name="city" lay-verify="required">
+          <option value=""></option>
+          <option value="0">综合管理部</option>
+          <option value="1">运营管理部</option>
+          <option value="2">经营开发部</option>
+          <option value="3">技术支持部</option>
+          <option value="4">后勤部</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">所属岗位</label>
+        <div class="layui-input-block">
+          <select name="city" lay-verify="required">
+            <option value=""></option>
+            <option value="0">市场管理岗</option>
+            <option value="1">施工管理岗</option>
+            <option value="2">运输管理岗</option>
+            <option value="3">技术岗</option>
+            <option value="4">后勤岗</option>
+          </select>
+        </div>
+      </div>
+
+    <div class="layui-form-item">
+      <label class="layui-form-label">劳保道具</label>
+      <div class="layui-input-block">
+        <input type="checkbox" name="like[write]" title="头盔"checked>
+        <input type="checkbox" name="like[read]" title="劳保鞋" checked>
+        <input type="checkbox" name="like[dai]" title="防护面罩"checked>
+      </div>
+    </div>
+
+    <div class="layui-form-item">
+      <label class="layui-form-label">允许下井</label>
+      <div class="layui-input-block">
+        <input type="checkbox" name="switch" lay-skin="switch">
+        <div class="layui-form-mid layui-word-aux"> 是否允许该员工下作业，默认不允许</div>
+      </div>
+    </div>
+  
+    <div class="layui-form-item">
+        <label class="layui-form-label">工资</label>
+        <div class="layui-input-inline">
+          <input type="text" name="title" required lay-verify="required" placeholder="请输入工资" autocomplete="off" class="layui-input">
+        </div>
+      </div>
+
+    <div class="layui-form-item layui-form-text">
+      <label class="layui-form-label">备&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp注</label>
+      <div class="layui-input-block">
+        <textarea name="desc" placeholder="请输入内容" class="layui-textarea"></textarea>
+      </div>
+    </div>
+    <div class="layui-form-item">
+      <div class="layui-input-block">
+        <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+        <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+      </div>
+    </div>
+  </form>
+</div>
+<script>
+layui.use(['form'], function(){
+        var form = layui.form;
+        form.render();
+});
+</script>
+</body>
+</html>
